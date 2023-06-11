@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="head"></h2>
+    <p>SevenMentor prt ltd.</p>
+    <p class="b">Shrinath Plaza,F.C Road</p>
+    <p class="b">Dyaneshwar Paduka Chowk</p>
+    <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nihil officiis repellat, magnam natus harum possimus temporibus cumque, excepturi vero corrupti inventore magni tempora exercitationem modi dolorem dicta cum mollitia?</p>
+    <p class="c">jfhdklsfllkkskskfshhfhfhfh</p>
+    <p id="para"></p>
+    <h4 id="h"></h4>
+    <script>
+        //finding element by getting id method
+        document.getElementById("head").innerHTML="Welcome to Javascript";
+
+        //finding element by getting tagname methode
+        const e=document.getElementsByTagName("p");
+        document.getElementById("h").innerHTML="Text in first paragraph"+e[0].innerHTML;
+
+        //finding element by getting classname
+        //   const x=getElementsByClassName("b");
+        //   for(let i=0;i<=x.length;i++)
+        //  {
+        //      document.getElementById("para").innerHTML+=x[i].innerHTML+"<br>"
+        //  }
+
+        //finding element by css selectors
+         const y=document.querySelectorAll(".c");
+        document.getElementById("para").innerHTML='All paragraphs with class c are:'+y[0].innerHTML+"<br>"+y[1].innerHTML;
+    </script>
+</body>
+</html>

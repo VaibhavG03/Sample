@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/HTML/index.css">
+    <script src="https://kit.fontawesome.com/37d8b41c0d.js" crossorigin="anonymous"></script>
+    <title>University Website Project</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="/HTML/index.html"><img src="/image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/HTML/index.html">HOME</a></li>
+                    <li><a href="/HTML/About.html">ABOUT</a></li>
+                    <li><a href="/HTML/Course.html">COURSE</a></li>
+                    <li><a href="/HTML/Blog.html">BLOG</a></li>
+                    <li><a href="/HTML/Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!--Our course start-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Explore the intersection of technology and society. Learn about environmental justice. Take the famous Problem of God course. Our innovative courses inspire and invite you to help solve some of today’s most pressing local, national and global issues.</p>
+    
+        <div class="row">
+            <div class="course1">
+                <h3>Undergraduate Programs</h3>
+                <p>For decades, Eduford College has improved the health of our communities, one graduate at a time. The JoAnn McGrath School of Nursing and Health Professions, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited nursing programs, guaranteed clinical placements and a technology-rich Center for Clinical Education.</p>
+            </div>
+            <div class="course1">
+                <h3>Graduate Programs</h3>
+                <p>Building on our strong roots in leadership, health care and education, Eduford is proud to offer an array of coed graduate programs for women and men who are ready to advance their careers and grow as leaders. The Eduford College Community Psychology Master's program will help you to meet your goals of becoming a Licensed Professional Counselor.</p>
+            </div>
+            <div class="course1">
+                <h3>Post Graduation</h3>
+                <p>The Eduford, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited nursing programs, guaranteed clinical placements and a technology-rich Center for Clinical Education. The Eduford College Community Psychology Master's program will help you to meet your goals of becoming a Licensed Professional Counselor.</p>
+            </div>
+        </div>
+    </section>
+    <!--Our course end-->
+    <!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We're a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we're the nation's oldest Catholic and Jesuit university.
+    <br>    
+    We're a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i>  by Vaibhav Vhanagade</p>
+</section>
+<!--JavaScript for toggle menu  -->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+</script>
+</body>
+</html>

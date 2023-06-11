@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var total,per,a,b,c,d,e
+        a=parseFloat(prompt("Enter physics mark"))
+        b=parseFloat(prompt("Enter chemistry mark"))
+        c=parseFloat(prompt("Enter maths mark"))
+        d=parseFloat(prompt("Enter stat mark"))
+        e=parseFloat(prompt("Enter english mark"))
+        total=a+b+c+d+e
+        per=total/5
+        document.write("Total of marks:"+total+ "<br> Percentage of student:"+per+"<br>")
+        if(per>=75)
+        {
+            document.write("student pass with  distinction")
+        }
+        else if(per>=60 && per<75)
+        {
+            document.write("student pass with 1st class")
+        }
+        else if(per>=50 && per<60)
+        {
+            document.write("student pass with 2nd class")
+        }
+        else if(per>=35 && per<50)
+        {
+            document.write("student passed")
+        }
+        else{
+            document.write("student fail")
+        }
+    </script>
+</body>
+</html>

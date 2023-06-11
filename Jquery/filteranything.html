@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#s1").on("keyup",function(){
+            var value=$(this).val().toLowerCase();
+            $("#div1 *").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+   <input type="search" placeholder="Search.." id="s1">
+   <div id="div1">
+      <h1>SevenMentor Pvt. Ltd</h1>
+      <p>It is a learning center</p>
+      <div>You can learn any software course here.</div>
+      <button>Click Here</button>
+      <button>Show again</button>
+      <p>F.C. Road Pune.</p>
+   </div>
+</body>
+</html>

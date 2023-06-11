@@ -1,0 +1,58 @@
+#container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header img{
+    float: left;
+
+}
+  #nav{
+    margin-left: 60px;
+
+    background-color: white;
+}
+#nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+#nav li{
+    
+    display: inline;
+    margin: 0px 20px;
+}
+ #logo{
+    height: 20px;
+    width: 80px;
+    
+}
+#nav ul li a:hover{
+color: skyblue;
+}
+#image{
+    width: 800px;
+}
+#header{
+    height: 30px;
+    background-color: white;
+}
+#section1{
+    margin-top: 40px;
+    margin-left: 50px;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    z-index: +2;
+}
+ #new{
+    margin-top: 5px;
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+#learn{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+

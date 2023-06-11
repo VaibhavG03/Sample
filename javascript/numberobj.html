@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Mobile No: <input type="text"  id="t1" maxlength="10"> 
+   <button onclick="valid()">Click here</button>
+   <button onclick="intf()">Integer</button>
+   <button onclick="fix()">Fixed</button>
+   <script>
+    function valid()
+    {
+        var a;
+        a=document.getElementById("t1").value;
+        if(isNaN(a))
+        {
+           alert("Please enter digits only");
+        }
+        else
+        {
+            alert("Numbers verified");
+        }
+    }
+    function intf()
+    {
+        var a;
+        a=parseFloat(document.getElementById("t1").value);
+        if(Number.isInteger(a))
+        {
+            alert("Integer value");
+        }
+        else
+        {
+            alert("Not a Integer");
+        }
+    }
+    function fix()
+    {
+       var a;
+       a=parseFloat(document.getElementById("t1").value);
+       alert(a.toFixed(2));
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+#container{
+    width: 800px;
+    margin: auto;
+}
+#header img{
+    width: 30px;
+    float: left;
+    margin-top: 15px;
+}
+#header{
+    height: 30px;
+    background-color:white;
+}
+#nav li{
+    display: inline;
+    margin: 0 20px;
+}
+#nav ul li a{
+    text-decoration:underline;
+    color: black;
+    
+}
+ #nav{
+    position: relative;
+    top: 5px;
+ }
+ #info{
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    z-index: +1;
+    margin-top: 40px;
+    margin-left: 50px;
+ }
+ #logo2{
+    width: 800px;
+ }
+ #b1{
+    background-color: black;
+    color: white;
+ }
+ #b2{
+    background-color: white;
+    color: black;
+ }
+ #nav ul{
+    float: right;
+}
+ 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css("color","lightgreen");
+                    $(this).css("font-size","30px");
+                },
+                mouseleave: function(){
+                    $(this).css("color","lightblue");
+                },
+                click: function(){
+                    $(this).css("color","blue");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur non accusamus ad. Nulla non earum laudantium labore? Eum veniam eaque quam doloremque repudiandae blanditiis nulla quo! Ex, numquam earum.</p> 
+</body>
+</html>

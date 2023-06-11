@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student
+        {
+            constructor(rno,name,addr,per,grade)
+            {
+                this.srno=rno;
+                this.sname=name;
+                this.saddr=addr;
+                this.sper=per;
+                this.sgrade=grade;
+            }
+            details()
+            {
+                return(
+                    document.write("Roll No: "+this.srno +"<br>" +"Name :"+this.sname+"<br>" +"Address :"+this.saddr+"<br>")
+                )
+            }
+            result()
+            {
+                return(
+                    document.write("Roll No: "+this.srno +"<br>" +"Name :"+this.sname+"<br>" +"Percentage :"+this.sper+"<br>"+"Grade :"+this.sgrade+"<br><br>")
+                ) 
+            }
+        }
+        let stud1=new student(1,"Ram","Pune",78,"A");
+        let stud2=new student(2,"Sam","Pune",88,"A+");
+        let stud3=new student(3,"sham","Pune",80,"A");
+        stud1.details();
+        stud1.result();
+        stud2.details();
+        stud2.result();
+        stud3.details();
+        stud3.result();
+    </script>
+</body>
+</html>

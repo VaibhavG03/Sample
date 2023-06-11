@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #div1{
+             height: 200px;
+             width: 300px;
+             border: 1px solid purple;
+             background-color: pink;
+             text-align: center;
+        }
+    </style>
+    <script>
+        //remove div element
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#div1").remove();
+            });
+        });
+        //empty div element
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#div1").empty();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <h4>Seven Mentor Pvt Ltd</h4>
+        <p>Dyaneshwar Paduka Chowk</p>
+        <p>FC Road</p>
+    </div>
+    <br>
+    <button id="btn1">Remove div</button>
+    <button id="btn2">Empty div</button>
+</body>
+</html>

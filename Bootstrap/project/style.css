@@ -1,0 +1,20 @@
+
+.btnsearch{
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+}
+
+a:link,a:visited,a:active{
+    text-decoration: none;
+    color: black;
+}
+a:link:hover{
+    color: orange;
+}
+.hide{
+    display: none;
+}
+.a1:hover>.hide{
+    display: block;
+}

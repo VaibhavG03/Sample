@@ -1,0 +1,69 @@
+#header{
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+}
+body{
+    background-color: grey;
+}
+#container{
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h5{
+    position: relative;
+    bottom: 20px;
+}
+#bar{
+    position: relative;
+    bottom: 120px;
+    background-color: rgb(75, 16, 16);
+    color: white;
+}
+#search{
+    position: relative;
+    left: 100px;
+    margin: 10px;
+}
+
+ #bar li{
+    display: inline;
+    margin: 10px;
+}
+a{
+    color: azure;
+}
+#image{
+    
+    position: relative;
+    bottom: 125px;
+}
+#Head{
+    position: relative;
+    bottom: 140px;
+}
+h4{
+    background-color: grey;
+    color: white;
+}
+#img3{
+    float: left;
+    margin: 2px;
+     padding: 2px;
+}
+#c2{
+    
+    width: 400px;
+    margin-top: 1px;
+    border: 2px solid grey;
+}
+#footer{
+    clear: both;
+    text-align: center;
+    height: 30px;
+}
+#bar li a{
+    text-decoration: none;
+}

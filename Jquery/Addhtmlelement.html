@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        //Append method
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").append("<b>FC Road</b>");
+            });
+            $("#btn2").click(function(){
+                $("ol").append("<li>Item 4</li>");
+            });
+        });
+        //Prepend method
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("p").prepend("<b>Learning Center</b>");
+            });
+            $("#btn4").click(function(){
+                $("ol").prepend("<li>Item 0</li>");
+            });
+        });
+        //Insert before and after
+        $(document).ready(function(){
+            $("#btn5").click(function(){
+                $("img").before("<b>Top</b>");
+            });
+            $("#btn6").click(function(){
+                $("img").after("<b>Offers</b>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>SevenMentor Pvt Ltd</p>
+    <p>Dyaneshwar paduka chowk</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <img src="/image/a.png" width="50px" ><br><br>
+    <button id="btn1">Append Text</button>
+    <button id="btn2">Append list items</button>
+    <button id="btn3">Prepend text</button>
+    <button id="btn4">Prepend list items</button>
+    <button id="btn5">Insert Before</button>
+    <button id="btn6">Insert After</button>
+</body>
+</html>

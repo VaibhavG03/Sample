@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clr1()
+        {
+            document.bgColor="aqua";
+            setTimeout(clr2,2000) 
+        }
+        function clr2()
+        {
+            document.bgColor="purple";
+            setTimeout(clr3,2000) 
+        }
+        function clr3()
+        {
+            document.bgColor="green";
+            setTimeout(clr4,2000) 
+        }
+        function clr4()
+        {
+            document.bgColor="yellow";
+            setTimeout(clr1,2000) 
+        }
+    </script>
+</head>
+<body>
+    <button onclick="clr1()">Color</button>
+</body>
+</html>

@@ -1,0 +1,147 @@
+.header{
+    background-color: rgb(187, 12, 12);
+    display: flex;
+}
+.image{
+    padding: 0px;
+    height: 150px;
+}
+.image #logo {
+    margin-left: 50px;
+    height: 150px;
+     width: 100%; 
+     box-shadow: 0px 0px 5px 0px black;  
+}
+.image #hlogo{
+    margin-left: 50px;
+    height: 150px;
+    width: 585px;
+}
+.nav{
+    background-color: rgb(34, 28, 28);
+    position: relative;
+    margin: 0px 45px 0px 50px;
+    border-radius: 5px;
+}
+.nav ul{
+    margin-top: 0px;
+    padding: 5px;
+    text-align: center;
+
+}
+.nav ul li{
+    display: inline;
+    color: white;
+    margin: 30px;
+}
+.content{
+    background-color: wheat;
+
+}
+.button{
+    margin-left: 50px;
+}
+#login{
+    background-color: rgb(110, 7, 7);
+    color: white;
+    border:  rgb(110, 7, 7);
+    font-size: 10px;
+    padding:5px 10px 5px 5px ;
+
+}
+#sign{
+    background-color: rgb(36, 29, 29);
+    color: white;
+    border:rgb(36, 29, 29) ;
+    font-size: 10px;
+    padding: 5px 10px 5px 5px;
+}
+.form{
+    margin-left: 50px;
+}
+.form1{
+    background-color:orange ;
+    width: 200px;
+}
+input[type=text]{
+    display: block;
+}
+input[type=password]{
+    display: block;
+}
+#reset{
+    margin-left: 20px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(23, 156, 156);
+    border: rgb(23, 156, 156) ;
+}
+.category{
+    background-color:orange ;
+    width: 200px;
+}
+ .category #c{
+    margin-top: 10px;
+    padding-left: 20px;
+    background-color: rgb(248, 198, 104);
+ }
+ .category ul li{
+    padding: 5px;
+ }
+.main{
+    background-color: white;
+    width: 400px;
+    margin-left: 10px; 
+    
+}
+.main p{
+    font-size: 12px;
+}
+.main #img{
+    margin-left: 20px;
+}
+.main #pizza{
+    margin-right: 20px;
+    float: right;
+}
+.main h4{
+    margin-left: 20px;
+    color: rgb(17, 99, 131);
+}
+.main p{
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+}
+.row1{
+    display: flex;
+    margin:10px 20px 0px 20px;
+    color: white;
+    background-color: rgb(219, 9, 9);
+}
+.row2{
+    display: flex;
+    margin:10px 20px 0px 20px;
+    color: white;
+    background-color: rgb(219, 9, 9);
+}
+.row3{
+    display: flex;
+    margin:10px 20px 0px 20px;
+    color: white;
+    background-color: rgb(219, 9, 9);
+}
+.main2{
+    margin-right: 50px;
+    width: 200px;
+    margin-left: 10px;
+    background-color: orange;
+}
+.main2 h3{
+    text-align: center;
+    background-color: rgb(248, 198, 104);
+}
+.main2 p{
+    margin-left: 20px;
+}

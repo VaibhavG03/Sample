@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ch,y
+        alert("1:January\n 2:February\n 3:March\n 4:April\n 5:May\n 6:June\n 7:July\n 8:August\n 9:September\n 10:Octomber\n 11:November\n 12:December")
+        y=parseInt(prompt("Enter Year"))
+        ch=parseInt(prompt("Enter Month No :"))
+        switch(ch)
+        {
+            case 1:
+                alert("31 days in January")
+                break
+            case 2:
+                if((y%4==0 && !(y%100==0)) || y%400==0)
+                 {
+                    alert("29 Days")
+                 }
+                 else{
+                    alert("28 Days")
+                 }
+        
+                break
+            case 3:
+                alert("31 days in March")
+                break
+            case 4:
+                alert("30 days in April")
+                break
+            case 5:
+                alert("31 days in May")
+                break
+            case 6:
+                alert("30 days in June")
+                break
+            case 7:
+                alert("31 days in July")
+                break
+            case 8:
+                alert("31 days in August")
+                break
+            case 9:
+                alert("30 days in September")
+                break
+            case 10:
+                alert("31 days in Octomber")
+                break
+            case 11:
+                alert("30 days in November")
+                break
+            case 12:
+                alert("31 days in December")
+                break
+            default:
+                alert("Enter Correct Month")
+                break
+        }
+    </script>
+</body>
+</html>

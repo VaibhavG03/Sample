@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate()
+        {
+            var d=document.frm.t1;
+            var v=/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+            if(d.value.match(v))
+            {
+                document.frm.t1.focus();
+                var a=d.value.split('/');
+                var b=d.value.split('-');
+                al=a.length;
+                bl=b.length;
+
+                if(al>1)
+                {
+                    var pdate=d.value.split('/');
+                }
+                else if(bl>1)
+                {
+                    var pdate=d.value.split('-');
+                }
+                var dd=parseInt(pdate[0]);
+                var mm=parseInt(pdate[1]);
+                var yy=parseInt(pdate[2]);
+
+                var Listofdays=[31,28,31,30,31,30,31,31,30,31,30,31];
+                if(mm==1 || mm>2)
+                {
+                    if(dd>Listofdays[mm-1])
+                    {
+                        alert("Invalid date format");
+                    }
+                }
+                if(mm==2)
+                {
+                    var lyear=false;
+                    if((yy%4==0)&&(yy%100==0))
+                    {
+                        lyear=true;
+                    }
+                    if((lyear==false)&&(dd>=29))
+                    {
+                        alert("Invalid date format");
+                    }
+                    if((lyear==true) && (dd>29))
+                    {
+                        alert("Invalid date format");
+                    }
+                }
+            }
+            else{
+                alert("Invalid Date format");
+                document.frm.t1.focus();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        Enter Date: <input type="text" name="t1" ><br>
+        <input type="button" value="Validate" onclick="validate()">
+    </form>
+</body>
+</html>

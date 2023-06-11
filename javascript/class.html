@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Add
+        {
+            constructor(a,b)
+            {
+                this.a=a;
+                this.b=b;
+            }
+            display()
+            {
+                return(
+                    document.write("Addition is: "+(this.a+this.b)+"<br>")
+                )
+            }
+        }
+        let obj1=new Add(10,20)
+        obj1.display();
+
+        let obj2= new Add(14,23)
+        obj2.display();
+    </script>
+</body>
+</html>

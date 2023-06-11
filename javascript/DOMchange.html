@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hello World</p>
+    <img src="/image/a.png" id="image" height="100" width="100">
+    <p id="p2"></p>
+    <script>
+        //changing html content
+        document.getElementById("p1").innerHTML="Welcome to javasript";
+
+        //changing value of attribute
+        document.getElementById("image").src="/image/about.jpg";
+        document.getElementById("image").height=200;
+        document.getElementById("image").width=200;
+        //creating html content
+        document.getElementById("p2").innerHTML="Date:"+Date();
+    </script>
+</body>
+</html>

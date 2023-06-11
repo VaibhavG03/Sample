@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        //simple arrow function
+        var hello;
+        hello=() => "Hello World!";
+        document.getElementById("p1").innerHTML=hello();
+        //arrow function with parameters
+        let add=(a,b)=>a+b;
+        document.getElementById("p2").innerHTML=add(4,5);
+        //arrow function without parameters
+        var msg;
+        msg=displ=>"Hello "+ displ;
+        document.getElementById("p3").innerHTML=msg("Everyone!");
+    </script>
+</body>
+</html>

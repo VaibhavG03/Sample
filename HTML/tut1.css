@@ -1,0 +1,28 @@
+#container{
+    background-color: white;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: grey;
+}
+#header1{
+    float: left;
+}
+#nav{
+    background-color: rgb(56, 10, 10);
+    height: 30px;
+    padding-top: 5px;
+    
+}
+#nav li{
+    display: inline;
+    margin: 0 10px;
+
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+    
+}

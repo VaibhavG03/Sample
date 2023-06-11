@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        //slide-down method
+        // $(document).ready(function(){
+        //     $("#menu").click(function(){
+        //          $("#drop").slideDown("slow");
+        //      });
+        //  });
+
+        //slide-up method
+        // $(document).ready(function(){
+        //     $("#menu").click(function(){
+        //         $("#drop").slideUp("slow");
+        //     });
+         //});
+         
+        //slide toggle method
+         $(document).ready(function(){
+             $("#menu").click(function(){
+                 $("#drop").slideToggle("slow");
+             });
+        });
+    </script>
+    <style>
+        #drop,#menu{
+            background-color: pink;
+            border: solid 1px purple;
+            text-align: center;
+            color: green;
+        }
+        #drop{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">SevenMentor Pvt Ltd</div>
+    <div id="drop">Welcome to sevenmentor pvt ltd <br>
+    It is alearning center which provides different courses
+    </div>
+</body>
+</html>

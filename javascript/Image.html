@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+    <script>
+        function show()
+        {
+            document.getElementById("image1").src="/image/about.jpg";
+            document.getElementById("image1").height=300;
+            document.getElementById("image1").width=500;
+            setTimeout(show1,1500);
+        }   
+        function show1()
+        {
+            document.getElementById("image1").src="/image/a.png";
+            document.getElementById("image1").height=300;
+            document.getElementById("image1").width=500;
+            setTimeout(show2,1500);
+        }
+        function show2()
+        {
+            document.getElementById("image1").src="/image/background.jpg";
+            document.getElementById("image1").height=300;
+            document.getElementById("image1").width=500;
+            setTimeout(show3,1500);
+        }
+        function show3()
+        {
+            document.getElementById("image1").src="/image/banner2.jpg";
+            document.getElementById("image1").height=300;
+            document.getElementById("image1").width=500;
+            setTimeout(show,1500);
+        }
+      </script>
+</head>
+<body>
+    <img src="" id="image1" >
+     <button onclick="show()" id="btn" >Image</button>
+      
+</body>
+</html>

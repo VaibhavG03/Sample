@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <script>
+        //parssing array
+        const a='["Mango","Banana","Grapes","Orange"]';
+        const arr=JSON.parse(a);
+        document.getElementById("p1").innerHTML=arr[0]+"<br>"+arr[1]+"<br>";
+        document.getElementById("p1").innerHTML += arr;
+
+        //parsing object
+        const b='{"name":"ABC", "age":30, "city":"Pune"}'
+        const obj=JSON.parse(b);
+        document.getElementById("p2").innerHTML=obj.name+","+ obj.age;
+
+        //parsing date
+        const t='{"name":"ABC","birth":"2001-10-22","city":"Pune"}';
+        const obj1=JSON.parse(t);
+        obj1.birth=new Date(obj1.birth);
+        document.getElementById("p3").innerHTML=obj1.name+", "+ obj1.birth;
+
+        //parsing function
+        const d='{"name":"ABC","age":"function() {return 30;}","city":"Pune"}';
+        const obj2=JSON.parse(d);
+        obj2.age=eval("(" + obj2.age + ")");
+        document.getElementById("p4").innerHTML=obj2.name+","+obj2.age();
+    </script>
+</body>
+</html>

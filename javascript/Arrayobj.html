@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var fruits=["Apple","Banana","Orange","Mango"];
+       var vegi=["Tomato","Capsicum","Drum sticks"];
+       var qyt=[10,45,23,67,76];
+       var e=qyt.find(f);
+       function f(q)
+       {
+        if(q>40)
+        {
+            document.write(q+"<br>");
+        }
+       } 
+
+       vegi.forEach(fe);
+       function fe(item,index)
+       {
+        document.write(index+":"+item+"<br>");
+       }
+
+       var c=fruits.concat(vegi);
+       document.write("Concatineted array is:"+c+"<br>");
+
+       var a=fruits.copyWithin(1,2);
+       document.write("Copied array is:"+a+"<br>");
+
+       document.write("Length of fruits array is:"+fruits.length+"<br>");
+       document.write("Length of vegi array is:"+vegi.length+"<br>");
+       document.write("Length of qyt array is:"+qyt.length+"<br>");
+        
+       var i=fruits.indexOf("Orange");
+       document.write("index of orange is:"+i+"<br>");
+
+       fruits.pop();
+       document.write(fruits+"<br>");
+
+       fruits.push("Grapes");
+       document.write(fruits+"<br>");
+
+       document.write(fruits.reverse()+"<br>");
+
+       document.write(fruits.sort()+"<br>");
+
+       document.write(fruits.reverse()+"<br>");
+    </script>
+</body>
+</html>

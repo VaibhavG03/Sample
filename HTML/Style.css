@@ -1,0 +1,11 @@
+*{box-sizing: border-box;}
+html,body{height: 50%;}
+a,button{cursor: pointer;;}
+.logincard{width: 100%; padding: 70px 30px 44px;  border-radius: 100%; background: #ffffff; text-align: center;}
+.logincard > h3{margin: 0 0 30px; font-weight: 500; font-size: 16px; color: rgba(0, 0,0,0.38);}
+.loginform{ width: 100%; margin: 0; display: grid; gap: 16px;}
+.loginform > a {color: #2661c0;}
+.loginform > input,
+.loginform > button{width: 100%; height: 56px; padding: 0 16px; border-radius: 8px;}
+.loginform > input{border: 2px solid #ebebeb;}
+.loginform > button{width: 100%; height: 56px; border: 0; background: #1858c0; color: #f9f9f9; font-weight: 600;}

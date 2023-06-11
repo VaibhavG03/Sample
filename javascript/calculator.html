@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+          abc.t3.value=parseInt(abc.t1.value)+parseInt(abc.t2.value);
+        }
+        function sub()
+        {
+            abc.t3.value=parseInt(abc.t1.value)-parseInt(abc.t2.value);
+
+        }
+        function mul()
+        {
+            abc.t3.value=parseInt(abc.t1.value)*parseInt(abc.t2.value);
+
+        }
+        function div()
+        {
+            abc.t3.value=parseInt(abc.t1.value)/parseInt(abc.t2.value);
+
+        }
+    </script>
+</head>
+<body>
+   <form name="abc">
+    <label >Enter 1st No:</label>
+    <input type="text" name="t1"><br><br>
+    <label>Enter 2nd No:</label>
+    <input type="text" name="t2"><br><br>
+    <label >Answer:</label>
+    <input type="text" name="t3"><br><br>
+    <input type="button" value="+" onclick="add()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="mul()">
+    <input type="button" value="/" onclick="div()">
+   </form> 
+</body>
+</html>

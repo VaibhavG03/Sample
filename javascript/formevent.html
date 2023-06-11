@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function l()
+        {
+            document.bgColor="pink";
+        }
+        function u()
+        {
+            alert("You have closed window");
+        }
+        function sub()
+        {
+            alert("Form submitted successfully");
+        }
+        function re()
+        {
+            alert("You have cleared the form please fill it again");
+        }
+        function foc()
+        {
+            document.getElementById("t1").style.backgroundColor="aqua";
+            document.getElementById("t1").style.color="red";
+        }
+        function upper()
+        {
+            var a;
+            a=document.getElementById("t2");
+            a.value=a.value.toUpperCase();
+        }
+        function sel()
+        {
+            document.getElementById("t2").style.color="green";
+            document.getElementById("t2").style.fontSize="10px";
+        }
+        function change()
+        {
+            var x;
+            x=document.getElementById("city").value;
+            document.getElementById("h").innerHTML="You have selected   "  +x;
+        }
+    </script>
+</head>
+<body onload="l()" onunload="u()">
+    <form name="frm" onsubmit="sub()" onreset="re()">
+    Enter Name:<input type="text" id="t1" onfocus="foc()"><br><br>
+    Enter LastName:<input type="text" id="t2" onblur="upper()" onselect="sel()"><br><br>
+    City:<select id="city" onchange="change()"><br>
+        <option>pune</option>
+        <option>mumbai</option>
+        <option>delhi</option>
+    </select><br>
+    <h3 id="h"></h3>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
